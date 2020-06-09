@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="container">
+    <h2>Search</h2>
+    <div id="search-box">
+        <div>
+            <a>Tittle:</a>
+            <input type="text" name="" id="search-name">
+        </div>
+        <div>
+            <a>Type:</a>
+            <select id="movie-type">
+                <option value="Movie">Movie</option>
+                <option value="Series">Series</option>
+                <option value="Episode">Episode</option>
+            </select>
+        </div>
+        <div>
+            <input type="button" value="Search" id="search-button" onclick="searchButtonClick()">
+        </div>
+    </div>
+    <h1 id="error-message">Movie not found</h1>
+    <div>
+        <ul id="result-box"></ul>
+    </div>
+    <div id="pagination">
+        <a onclick="prevClick()">&laquo;</a>
+        <div style="display: inline" id="numberList">
+
+        </div>
+        <a onclick="nextClick()">&raquo;</a>
+    </div>
+    <div id="movie-details">
+        <h3>Film info:</h3>
+        <div>
+            <img id="movie-details-img">
+            <div>
+                <table id="movie-details-table">
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="js/script.js"></script>
+</html>
